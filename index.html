@@ -1,126 +1,138 @@
-
+<html>
+<head>
+  <title>Davis Wojnovich</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
 
-<div class="container" style="max-width: 75rem;">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4">Davis Wojnovich</span>
-      </a>
+  <div class="container" style="max-width: 75rem;">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4" id="home">Davis Wojnovich</span>
+        </a>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-      </ul>
-    </header>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg">
-          <picture>
-            <img src="images/top_photo.JPG" class="img-fluid img-thumbnail" alt="Picture of me">
-          </picture>
-        </div>
-        <div class="col-lg">
-          <div class="px-4 py-5 my-5 text-center">
-            <h1 class="display-5 fw-bold">Big Coder Vibes</h1>
-            <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4">I'm a student, passionate about Computer Systems, Music Production, and Virtual Reality</p>
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Resume</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Me</button>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        </ul>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <picture>
+              <img src="images/top_photo.JPG" class="img-fluid img-thumbnail" alt="Picture of me">
+            </picture>
+          </div>
+          <div class="col-lg">
+            <div class="px-4 py-5 my-5 text-center">
+              <h1 class="display-5 fw-bold">Big Coder Vibes</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">I'm a student, passionate about Computer Systems, Music Production, and Virtual Reality</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                  <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Resume</button>
+                  <button type="button" onclick="window.open('https://www.linkedin.com/in/davis-wojnovich/','_blank')" class="btn btn-outline-secondary btn-lg px-4" target="_blank">Linkedin</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  <hr/>
-    <div class="gap-3">
-      <h2 class="fs-4">About Me</h2>
+    <hr/>
+      <div class="gap-3">
+        <h2 class="fs-4">About Me</h2>
+        <p class="fs-5">
+          I'm Davis Wojnovich, a Junior studying Computer Science and Statistics at Carnegie Mellon. I'm currently very passionate about creating technologies that will shape the future. In my free time, I enjoy producing music, and spending time with my dogs.
+        </p>
+      </div>
+    <hr/>
+    <div class="gap-3" id="experience">
+      <h2 class="fs-4">Experience</h2>
       <p class="fs-5">
-        I'm Davis Wojnovich, a Junior studying Computer Science and Statistics at Carnegie Mellon. I'm currently very passionate about creating technologies that will shape the future. In my free time, I enjoy producing music, and spending time with my dogs.
+
       </p>
     </div>
+    <div class="card-group">
+      <div class="card">
+        <div class="container mx-20">
+          <img class="card-img-top mx-auto" src="images/cmu.jpg" alt="Capital One Logo", style="height: 10rem; object-fit: scale-down;">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Computer Science Teaching Assistant</h5>
+          <p class="card-text">Throughout my stay at CMU, I've worked as a teaching assistant for both 15-122 (Principles of Imperitive Computation), and 15-251 (Great Ideas in Theoretical CS). I'm currently leading weekly recitations, covering computability, graphs, and other cs theory concepts.</p>
+        </div>
+      </div>
+      <div class="card mx-20">
+        <div class="container">
+          <img class="card-img-top mx-auto" src="images/c1.png" alt="Capital One Logo", style="height: 10rem; object-fit: scale-down;">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Software @ Captial One</h5>
+          <p class="card-text">I was fortunate to be able to spend my Sophmore summer working at Capital One, building tools for developer experience. My team leveraged AWS to deploy an internal tool to update deployment pipelines across the organization. Before finishing, we were able to begin pilot testing our tool with 5 teams.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container mx-20">
+          <img class="card-img-top mx-auto" src="images/jump.png" alt="Jump Logo", style="height: 10rem; object-fit: scale-down;">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Software @ Jump Trading</h5>
+          <p class="card-text">This upcoming summer I am excited to be a software engineer at Jump Trading in Chicago. </p>
+        </div>
+      </div>
+    </div>
   <hr/>
-  <div class="gap-3">
-    <h2 class="fs-4">Experience</h2>
-    <p class="fs-5">
+      <div class="gap-3">
+        <h2 class="fs-4" id="projects">Projects</h2>
+        <p class="fs-5">
+          Here is a sampling of some of the independent projects I've worked on, with links and all that extra stuff. 
+    </div>
+    <div class ="row px-3 py-3">
 
-    </p>
-  </div>
-  <div class="card-group">
-    <div class="card">
-      <div class="container mx-20">
-        <img class="card-img-top mx-auto" src="images/cmu.jpg" alt="Capital One Logo", style="height: 10rem; object-fit: scale-down;">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card mx-20">
-      <div class="container">
-        <img class="card-img-top mx-auto" src="images/c1.png" alt="Capital One Logo", style="height: 10rem; object-fit: scale-down;">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="..." alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-<hr/>
-    <div class="gap-3">
-      <h2 class="fs-4">Projects</h2>
-      <p class="fs-5">
-        Here is a sampling of some of the independent projects I've worked on, with links and all that extra stuff. 
-  </div>
-  <div class ="row px-3 py-3">
-
-  <div class="col-lg card mx-3" style="max-width: 50rem;">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="images/mlforall.png" class="img-fluid mt-2" alt="ML for All logo">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">ML for All</h5>
-          <p class="card-text">ML for all is a fullstack web application that allows users to build machine learning models in their browser with minimal user input. ML for All was build with a React/Redux, Firebase, and a Custom Flask Api for training models. This project received 4th place at a CMU UEA startup contest.</p>
-          <a href="https://github.com/MLforALL-app/MLforALL/blob/master/README.md" class="link-primary" target="_blank">Read Me</a>
-          <a href="https://github.com/MLforALL-app/MLforALL/" class="link-primary" target="_blank">Source Code</a>
-          <a href="https://mlforall.xyz" class="link-primary" target="_blank">Hosted Project</a>
+    <div class="col-lg card mx-3" style="max-width: 50rem;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/mlforall.png" class="img-fluid mt-2" alt="ML for All logo">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">ML for All</h5>
+            <p class="card-text">ML for all is a fullstack web application that allows users to build machine learning models in their browser with minimal user input. ML for All was build with a React/Redux, Firebase, and a Custom Flask Api for training models. This project received 4th place at a CMU UEA startup contest.</p>
+            <a href="https://github.com/MLforALL-app/MLforALL/blob/master/README.md" class="link-primary" target="_blank">Read Me</a>
+            <a href="https://github.com/MLforALL-app/MLforALL/" class="link-primary" target="_blank">Source Code</a>
+            <a href="https://mlforall.xyz" class="link-primary" target="_blank">Hosted Project</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="col-lg card mx-3 " >
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="/images/minicard.png" class="img-fluid mt-2" alt="ML for All logo">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">MiniCard: a 15112 Term Project</h5>
-          <p class="card-text">MiniCard is a Hearthstone-esque card game with networking support and deck building. The application was built using CMU 112's graphics library, and the stock python sockets api.</p>
-          <a href="https://github.com/Davis2600/MiniCard/blob/master/README.md" class="link-primary" target="_blank">Read Me</a>
-          <a href="https://github.com/Davis2600/MiniCard/" class="link-primary" target="_blank">Source Code</a>
+    <div class="col-lg card mx-3 " >
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/images/minicard.png" class="img-fluid mt-2" alt="ML for All logo">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">MiniCard: a 15112 Term Project</h5>
+            <p class="card-text">MiniCard is a Hearthstone-esque card game with networking support and deck building. The application was built using CMU 112's graphics library, and the stock python sockets api.</p>
+            <a href="https://github.com/Davis2600/MiniCard/blob/master/README.md" class="link-primary" target="_blank">Read Me</a>
+            <a href="https://github.com/Davis2600/MiniCard/" class="link-primary" target="_blank">Source Code</a>
+          </div>
         </div>
       </div>
+      
     </div>
-  </div>
 
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0  lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="text-muted">© 2021 Davis Wojnovich</span>
+        </div>
+      </footer>
+</body>
 
-  </div>
- 
+</html>
+
